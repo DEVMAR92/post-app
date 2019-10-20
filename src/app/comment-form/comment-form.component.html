@@ -1,0 +1,31 @@
+<div class="add-comment-container">
+  <div
+    class="add-comment-background"
+    (click)="closeComment()">
+  </div>
+  <form class="add-comment-form">
+    <h3>Napisz Komentarz</h3>
+    <div class="form-group">
+      <input
+        class="form-control"
+        name="desc"
+        type="text">
+      <label
+        class="form-text text-muted"
+        for="desc">
+        Opis
+      </label>
+    </div>
+    <button
+      class="btn btn-info"
+      type="button">
+      Dodaj Komentarz
+    </button>
+    <button
+      class="btn btn-secondary"
+      type="button"
+      (click)="closeComment()">
+      Zamkinj Okno
+    </button>
+  </form>
+</div>

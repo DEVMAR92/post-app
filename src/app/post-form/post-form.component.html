@@ -1,0 +1,40 @@
+<div class="add-post-container">
+  <div
+    class="add-post-background"
+    (click)="closeForm()">
+  </div>
+  <form class="add-post-form">
+    <h3>Napisz Posta</h3>
+    <div class="form-group">
+      <input
+        class="form-control"
+        name="title"
+        type="text">
+      <label
+        class="form-text text-muted"
+        for="title">
+        Tytuł
+      </label>
+      <input
+        class="form-control"
+        name="author"
+        type="text">
+      <label
+        class="form-text text-muted"
+        for="author">
+        Autor
+      </label>
+    </div>
+    <button
+      class="btn btn-info"
+      type="button">
+      Dodaj Posta
+    </button>
+    <button
+      class="btn btn-secondary"
+      type="button"
+      (click)="closeForm()">
+      Zamkinj Okno
+    </button>
+  </form>
+</div>

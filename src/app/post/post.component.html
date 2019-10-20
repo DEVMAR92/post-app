@@ -1,0 +1,12 @@
+<div class="post-container">
+  <h3
+    class="post-title">
+    {{title | uppercase}}
+  </h3>
+  <p
+    class="post-element"
+    *ngFor="let post of postList"
+    (click)="select(post.id)">
+    {{post.id}} Autor: {{post.author}} Tytuł: {{post.title}}
+  </p>
+</div>

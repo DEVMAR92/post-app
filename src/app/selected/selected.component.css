@@ -1,0 +1,25 @@
+.selected-container {
+  width: 70vw;
+  height: 100%;
+  max-height: 20vh;
+  padding: 10px;
+  background: darkgray;
+  border: 4px solid #563D7C;
+  border-radius: 10px;
+  overflow: auto;
+  margin: 10px;
+}
+.selected-title {
+  font-size: 2em;
+  font-weight: 700;
+}
+.selected-author {
+  font-size: 1.5em;
+}
+.selected-placeholder {
+  font-size: 2em;
+  font-weight: 700;
+}
+.selected-placeholder::after {
+  content: '!';
+}

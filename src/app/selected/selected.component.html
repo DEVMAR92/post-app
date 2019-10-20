@@ -1,0 +1,10 @@
+<div class="selected-container">
+  <ng-container *ngIf="activePost; else noSelect" >
+    <h3 class="selected-title">{{activePost.title | uppercase}}</h3>
+    <h5 class="selected-author">{{activePost.author}}</h5>
+  </ng-container>
+  <ng-template #noSelect>
+    <h3 class="selected-placeholder">Nie wybrano posta</h3>
+  </ng-template>
+</div>
+

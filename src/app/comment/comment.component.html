@@ -1,0 +1,16 @@
+<div class="comment-container">
+    <ng-container *ngIf="postCommentList.length > 0; else noComment" >
+      <div
+        class="comment-content"
+        *ngFor="let comment of postCommentList">
+        {{comment.body}}
+      </div>
+    </ng-container>
+    <ng-template #noComment>
+      <h3
+        class="comment-placeholder">
+        Brak komentarzy
+      </h3>
+    </ng-template>
+  </div>
+
